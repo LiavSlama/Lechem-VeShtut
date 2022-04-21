@@ -1,5 +1,7 @@
 
-kaboom();
+kaboom({
+  background: [0,0,0]
+});
 
 
 loadSprite("omer","sprites/omer.png");
@@ -32,10 +34,6 @@ layers([
 const squidMusic = play("squid");
 scene("help-omer", () => {
   add ([
-    sprite("bg"),
-    scale(0.5),
-  ])
-  add ([
     text("Help Omer Save", {size: 60}),
     pos(0,120),
     color(251, 230, 139),
@@ -63,10 +61,6 @@ scene("help-omer", () => {
 
 scene("level-1-pre", () => {
   add ([
-    sprite("bg"),
-    scale(0.5),
-  ])
-  add ([
     text("Level 1 : The ZONA", {size: 60}),
     pos(0,120),
     color(255, 255, 255),
@@ -84,10 +78,6 @@ scene("level-1-pre", () => {
 })
 
 scene("level-1", () => {
-   add ([
-     sprite("bg"),
-     scale(0.5),
-   ])
   const omer = add ([
   sprite("omer"),
   pos(-20,120),
@@ -160,10 +150,6 @@ scene("level-1", () => {
 });
 
 scene("omer-walk-1", () => {
-  add ([
-    sprite("bg"),
-    scale(0.5),
-  ])
   const mjMusic = play("michael");
   const omer = add ([
   sprite("omer"),
@@ -180,10 +166,6 @@ scene("omer-walk-1", () => {
 
 scene("level-2-pre", () => {
   squidMusic.play();
-  add ([
-    sprite("forrest"),
-    scale(0.3),
-  ])
   add ([
     text("Level 2 : The IMA", {size: 60}),
     pos(0,120),
@@ -202,10 +184,6 @@ scene("level-2-pre", () => {
 })
 
 scene("level-2", () => {
-   add ([
-    sprite("forrest"),
-    scale(0.3),
-   ])
   const omer = add ([
   sprite("omer"),
   pos(-20,120),
@@ -272,10 +250,6 @@ scene("level-2", () => {
 })
 
 scene("omer-walk-2", () => {
-  add ([
-    sprite("forrest"),
-    scale(0.3),
-  ])
   const mjMusic = play("michael");
   const omer = add ([
   sprite("omer"),
@@ -292,10 +266,6 @@ scene("omer-walk-2", () => {
 
 scene("level-3-pre", () => {
   squidMusic.play();
-  add ([
-    sprite("dog"),
-    scale(0.2),
-  ])
   add ([
     text("The DOG-MOM", {size: 85}),
     pos(0,120),
@@ -315,10 +285,6 @@ scene("level-3-pre", () => {
 })
 
 scene("level-3", () => {
-   add ([
-    sprite("dog"),
-    scale(0.2),
-   ])
   const omer = add ([
   sprite("omer"),
   pos(-20,120),
@@ -385,10 +351,6 @@ scene("level-3", () => {
 })
 
 scene("omer-walk-3", () => {
-  add ([
-    sprite("dog"),
-    scale(0.2),
-  ])
   const mjMusic = play("michael");
   const omer = add ([
   sprite("omer"),
@@ -431,7 +393,7 @@ scene("death", () => {
   const witchMusic = play("witch");
   add ([
     sprite("omer-zombies"),
-    scale(0.5),
+    scale(1),
   ])
  add ([
     text("press space to try again", {size: 50}),
