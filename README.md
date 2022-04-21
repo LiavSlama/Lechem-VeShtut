@@ -1,5 +1,4 @@
-# Welcome to Kaboom!
-
-Kaboom is a JavaScript game programming library that makes game dev fast and fun.
-
-Check out the [examples](https://kaboomjs.com/demo) and [docs](https://kaboomjs.com/doc), or this [tutorial](https://kaboomjs.com/tut/intro.md). 
+Hi!
+in order to play the game on a desktop please go to https://lechemveshtut.web.app (preferably on chrome).
+If you would like to run it locally, download the files and run "http-server -c-l" from the terminal. 
+Enjoy
