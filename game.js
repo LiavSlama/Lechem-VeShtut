@@ -55,7 +55,7 @@ scene("help-omer", () => {
   ])
   keyPress("space", () => {
     burp();
-    go("level-1-pre");
+    go("level-3");
   });
 })
 
@@ -340,7 +340,7 @@ scene("level-3", () => {
     destroy(w);
     score.value += 1;
     score.text = "Score:" + score.value;
-     if (score.value === 1) {
+     if (score.value === 12) {
       squidMusic.pause(); 
       go("omer-walk-3");
     }
@@ -369,7 +369,7 @@ scene("win", () => {
   const winSong = play("lets-go");
   add ([ 
     sprite("sky"),
-    scale(2),
+    scale(4),
   ])
   add ([
     text("THERE'S HOPE!", {size: 100}),
